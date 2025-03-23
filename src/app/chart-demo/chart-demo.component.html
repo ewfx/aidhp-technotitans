@@ -1,14 +1,23 @@
-<div class="chart-container">
-    <h2>Line Chart</h2>
-    <app-line-chart [lineChartData]="lineData" [lineChartOptions]="chartOptions"></app-line-chart>
+<h3>Line Chart</h3>
+<app-line-chart 
+  [lineChartData]="lineData" 
+  [lineChartOptions]="lineChartOptions">
+</app-line-chart>
 
-    <h2>Line Chart</h2>
-    <app-pie-chart [pieChartData]="lineData" [pieChartOptions]="chartOptions"></app-pie-chart>
-  
-    <h2>Vertical Bar Chart</h2>
-    <app-vertical-bar-chart [barChartData]="verticalBarData" [barChartOptions]="chartOptions"></app-vertical-bar-chart>
-  
-    <h2>Horizontal Bar Chart</h2>
-    <app-horizontal-bar-chart [barChartData]="horizontalBarData" [barChartOptions]="chartOptions"></app-horizontal-bar-chart>
-  </div>
-  
+<h3>Pie Chart</h3>
+<app-pie-chart 
+  [pieChartData]="pieData" 
+  [pieChartOptions]="pieChartOptions">
+</app-pie-chart>
+
+<h3>Vertical Bar Chart</h3>
+<app-vertical-bar-chart 
+  [barChartData]="verticalBarData" 
+  [barChartOptions]="verticalBarChartOptions">
+</app-vertical-bar-chart>
+
+<h3>Horizontal Bar Chart</h3>
+<app-horizontal-bar-chart 
+  [barChartData]="horizontalBarData" 
+  [barChartOptions]="horizontalBarChartOptions">
+</app-horizontal-bar-chart>

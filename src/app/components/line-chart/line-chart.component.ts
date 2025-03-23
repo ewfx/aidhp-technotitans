@@ -19,7 +19,7 @@ export class LineChartComponent implements OnChanges {
     if (this.lineChartData?.datasets) {
       this.lineChartData.datasets.forEach((dataset, index) => {
         dataset.borderColor = this.generateColors(1)[0];
-        dataset.backgroundColor = this.generateColors(1)[0] + '33'; // Transparent fill
+        dataset.backgroundColor = this.generateColors(1)[0] + '33'; 
       });
     }
   }

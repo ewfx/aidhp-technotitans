@@ -19,6 +19,8 @@ export class HorizontalBarChartComponent implements OnChanges {
     if (this.barChartData?.datasets) {
       this.barChartData.datasets.forEach((dataset) => {
         dataset.backgroundColor = this.generateColors(dataset.data.length);
+        console.log('Chart Type:', this.barChartType);
+        console.log('Chart Options:', this.barChartOptions);
       });
     }
 

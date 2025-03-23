@@ -11,7 +11,10 @@ import { BaseChartDirective } from 'ng2-charts';
 })
 export class VerticalBarChartComponent implements OnChanges {
   @Input() barChartData!: ChartConfiguration['data'];
-  @Input() barChartOptions: ChartConfiguration['options'] = { responsive: true };
+  @Input() barChartOptions: ChartConfiguration['options'] = { 
+    responsive: true,
+    indexAxis: 'x'  
+  };
 
   barChartType: ChartType = 'bar';
 
@@ -20,6 +23,11 @@ export class VerticalBarChartComponent implements OnChanges {
       this.barChartData.datasets.forEach((dataset) => {
         dataset.backgroundColor = this.generateColors(dataset.data.length);
       });
+      console.log('Chart Type:', this.barChartType);
+      console.log('Chart Options:', this.barChartOptions);
+    }
+    if (this.barChartOptions) {
+      this.barChartOptions.indexAxis = 'x';
     }
   }
 
