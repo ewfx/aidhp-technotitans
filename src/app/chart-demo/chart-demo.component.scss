@@ -1,0 +1,17 @@
+.chart-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  
+    h2 {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+  
+    app-line-chart, app-pie-chart,app-vertical-bar-chart, app-horizontal-bar-chart {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  
