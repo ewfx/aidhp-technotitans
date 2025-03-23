@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="logo">
+    <i class="fas fa-chart-line"></i> SmartFin Recommender
+  </div>
+  </nav>
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input
+        id="phoneNumber"
+        type="text"
+        [(ngModel)]="phoneNumber"
+        name="phoneNumber"
+        required
+        placeholder="Enter your phone number"
+      />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+        placeholder="Enter your password"
+      />
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</div>

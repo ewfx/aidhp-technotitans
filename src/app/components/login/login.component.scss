@@ -1,0 +1,84 @@
+// Color Variables
+$primary-color: #002b5b;  // Deep blue for professional finance theme
+$secondary-color: #004080; // Slightly lighter blue
+$hover-color: #ffcc00; // Gold for luxury & premium feel
+$text-color: #ffffff;
+$font-family: 'Poppins', sans-serif;
+
+body {
+  display: flex;
+  justify-content: center;   // Centers horizontally
+  align-items: center;       // Centers vertically
+  min-height: 100vh;         // Ensures it takes the full height of the viewport
+  margin: 0;
+  background-color: #f4f4f4; // Light background for the page
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 120px auto 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: $font-family;
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  label {
+    font-size: 16px;
+    color: $primary-color;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    font-size: 16px;
+    color: $primary-color;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: $primary-color;
+    color: $text-color;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+// Navbar styling
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: $text-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
