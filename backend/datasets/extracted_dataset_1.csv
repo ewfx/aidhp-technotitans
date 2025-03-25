@@ -1,0 +1,8 @@
+Customer_Id,Industry,Financial_Needs,Preferences,Revenue (in dollars),No of Employees
+ORG_US_014,Fashion And Clothing,"Supply Chain Financing, Inventory Loans, Retail Bar","Influencer Marketing, International Expansion, Sustainable Fabrics",150M-200M,800-1500
+ORG_US_001,IT Services and Software Development,"Business Loans, Payment Processing, Treasury Services","Cloud Services, Employee Benefits, International Expansion",50M-80M,500-1000
+ORG_US_005,Sports Equipment and Apparel,"Business Loans, Sponsorship Financing, Digital Payments","Athlete Sponsorship, R&D, E-commerce tech",80M-120M,500-1000
+ORG_US_002,Agriculture and Organic Food Production,"Agriculture Loans, Supply Chain Financing, POS","Farm Equipment, Distribution Channels, R&D on Sustainable Farming",20M-30M,200-500
+ORG_US_007,Textile and Sustainable Fabrics,"Green Loans, Supply Chain Financing, Digital Payments","R&D, Ethical Sourcing, International Logistics",200-500,500-1200
+ORG_US_006,Financial Services and Wealth Management,"High Net Worth Banking, Investment Management","Market Research, Alternative Investments, Private Equity",500M-700M,1000-2500
+ORG_US_004,Luxury Fashion and Apparel,"High Net Worth Banking, Expansion Loans, Payment","Digital Innovation, Limited Edition Collections, Global Marketing",100M-150M,100-200

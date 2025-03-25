@@ -1,0 +1,16 @@
+LoanID,LoanType,InterestRate,MinCreditScore,MaxLoanAmount,MinLoanAmount,RepaymentPeriod,ProcessingFee,PrepaymentPenalty,IncomeRequirement,EmploymentType,RiskLevel,LoanDescription
+L001,Personal Loan,10.5,650,500000,50000,5 years,2%,2%,30000,Salaried,Medium,A flexible loan for personal needs such as travel, medical expenses, or home renovation.
+L002,Home Loan,7.2,700,5000000,1000000,20 years,1%,2%,50000,Salaried/Self-Employed,Low,A long-term loan to finance your dream home purchase or construction.
+L003,Car Loan,9.0,680,1000000,200000,7 years,1.5%,1.5%,40000,Salaried,Medium,A loan to help you purchase a new or used car with affordable EMIs.
+L004,Business Loan,12.5,720,10000000,500000,10 years,2.5%,3%,70000,Self-Employed,High,A loan to support your business expansion, working capital, or new investments.
+L005,Education Loan,8.0,650,2000000,50000,10 years,1%,1%,20000,Student/Salaried,Low,A financial aid option for students to cover tuition and other educational expenses.
+L006,Gold Loan,11.0,600,300000,25000,3 years,0.5%,1%,25000,Salaried/Self-Employed,High,Secure an instant loan against your gold jewelry with minimal documentation.
+L007,Personal Loan,9.8,670,700000,60000,6 years,2%,2%,35000,Salaried,Medium,A quick personal loan for various needs, available with minimal paperwork.
+L008,Home Loan,7.0,710,6000000,1500000,25 years,1%,2%,55000,Salaried/Self-Employed,Low,Get a home loan with attractive interest rates and flexible repayment options.
+L009,Car Loan,8.5,690,1500000,250000,8 years,1.5%,1.5%,45000,Salaried,Medium,Finance your dream car with our easy car loan options.
+L010,Business Loan,13.0,730,15000000,1000000,12 years,2.5%,3%,80000,Self-Employed,High,A business loan designed to support large-scale expansions and investments.
+L011,Education Loan,7.5,640,2500000,100000,12 years,1%,1%,18000,Student/Salaried,Low,Financial assistance for students pursuing higher education in India or abroad.
+L012,Gold Loan,10.0,620,400000,30000,4 years,0.5%,1%,28000,Salaried/Self-Employed,High,Instant gold loans with high loan amounts and lower interest rates.
+L013,Personal Loan,11.2,660,800000,75000,7 years,2%,2%,32000,Salaried,Medium,Instant personal loans for salaried professionals with quick approvals.
+L014,Home Loan,6.8,720,7000000,2000000,30 years,1%,2%,60000,Salaried/Self-Employed,Low,Affordable home loans with flexible repayment tenures.
+L015,Car Loan,9.3,675,1800000,300000,6 years,1.5%,1.5%,42000,Salaried,Medium,Car loans with competitive interest rates and fast processing.
