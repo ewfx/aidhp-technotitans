@@ -17,11 +17,26 @@ $font-family: 'Poppins', sans-serif;
   .logo {
     font-size: 22px;
     font-weight: bold;
-    color: $text-color;
     text-transform: uppercase;
     letter-spacing: 1px;
+    
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-size: 22px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      padding: 8px 5px;
+      border-radius: 5px;
+  
+      &:hover, &.active {
+        color: $hover-color;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
   }
-
+  
   .nav-links {
     list-style: none;
     display: flex;
@@ -36,7 +51,7 @@ $font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-weight: 500;
         transition: all 0.3s ease-in-out;
-        padding: 8px 12px;
+        padding: 8px 3px;
         border-radius: 5px;
 
         &:hover, &.active {

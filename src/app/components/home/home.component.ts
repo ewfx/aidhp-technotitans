@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { ChatbotComponent } from '../chatbot/chatbot.component';
-import { ChartDemoComponent } from '../../chart-demo/chart-demo.component';
+
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, NavbarComponent, ChatbotComponent, ChartDemoComponent],
+  imports: [CommonModule, RouterModule, NavbarComponent, ChatbotComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

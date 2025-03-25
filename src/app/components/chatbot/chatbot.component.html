@@ -1,19 +1,21 @@
 <div class="chatbot-container">
-    <!-- Chat Icon -->
-    <div class="chat-icon" (click)="toggleChatbot()">
-      💬
+  <div class="chat-icon" (click)="toggleChatbot()">💬</div>
+
+  <div class="chat-window" *ngIf="isOpen">
+    <div class="chat-header">
+      <span>SmartFin Assistant</span>
+      <button (click)="toggleChatbot()">✖</button>
     </div>
-  
-    <!-- Chat Window -->
-    <div class="chat-window" *ngIf="isOpen">
-      <div class="chat-header">
-        <span>SmartFin Assistant</span>
-        <button (click)="toggleChatbot()">✖</button>
+
+    <div class="chat-body">
+      <div *ngFor="let msg of messages" [ngClass]="{'user': msg.sender === 'user', 'bot': msg.sender === 'bot'}">
+        {{ msg.text }}
       </div>
-      <div class="chat-body">
-        <p>Hi! How can I assist you today?</p>
-        <input type="text" placeholder="Type your message..." />
-      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" [(ngModel)]="userInput" placeholder="Type your message..." (keyup.enter)="sendMessage()" />
+      <button (click)="sendMessage()">➤</button>
     </div>
   </div>
-  
+</div>
