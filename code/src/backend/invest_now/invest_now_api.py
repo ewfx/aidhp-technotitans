@@ -13,7 +13,11 @@ def invest_now(cus_id = "CUST2025B"):
     else:
         ten_str = "short"
     file_path = '../datasets/customer_dataset.xlsx'
-    DATA = classify_investment_insight(pd.read_excel(file_path), cus_id)
+    try:
+        l = pd.read_excel(file_path) 
+        DATA = classify_investment_insight(l, cus_id)
+    except:
+        DATA = ""
     text = str(risk_level) + " risk and " + ten_str + " term" + " and " + DATA[0]
     print(text)
     op = final_investment_list(text)
