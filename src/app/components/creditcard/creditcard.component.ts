@@ -12,12 +12,13 @@ import { NavbarComponent } from "../navbar/navbar.component";
 })
 export class CreditCardComponent implements OnInit {
   creditCardRecommendation: any;
-
+  customerId: string | null = '';
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    const customerId = 'CUST001'; // Replace with actual ID
-    this.http.get(`http://localhost:5000/recommend-credit-card/${customerId}`).subscribe(
+    this.customerId = localStorage.getItem('customerId');
+  
+    this.http.get(`http://localhost:5000/recommend-credit-card//${this.customerId}`).subscribe(
       (response: any) => {
         if (response.status === 'success') {
           this.creditCardRecommendation = response;
