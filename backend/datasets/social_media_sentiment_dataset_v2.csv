@@ -1,7 +1,0 @@
-Customer_Id,Post_Id,Platform,Content,Timestamp,Sentiment_Score,Intent
-ORG_US_007,8810,Twitter,Navigating fluctuations raw material prices!! Cash Flow planning is KEY!,1/16/25 19:27,0.4,Financial Management Concern
-CUST2025A,1231,Twitter,Loving the new fashion trends this season!,1/1/25 10:00,0.8,Fashion Interest
-CUST2025J,4656,Facebook,Just finished a 5K run! Need new running shoes. Any suggestions?,1/3/25 12:45,0.7,Shopping Interest
-CUST2025G,1155,Facebook,Exciting collaborations coming soon!! Guess which celeb is joining our campaign,3/2/25 18:22,0.7,Audience Engagement
-CUST2025H,5651,Facebook,Need to start saving more. Thinking of opening a deposit account,3/2/25 18:22,0.6,Savings Planning
-CUST2025F,4477,Reddit,Looking for the best way to integrate blockchain for textile supply chain transparency,3/2/25 12:15,0.6,Tech Innovation Interest

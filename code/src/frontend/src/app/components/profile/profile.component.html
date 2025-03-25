@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="profile-container" *ngIf="customerData">
+    <h2>User Profile</h2>
+    <table>
+      <tr>
+        <th>Customer ID</th>
+        <td>{{ customerData['Customer_Id'] }}</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>{{ customerData['Age'] }}</td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>{{ customerData['Gender'] }}</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>{{ customerData['Location'] }}</td>
+      </tr>
+      <tr>
+        <th>Interests</th>
+        <td>{{ customerData['Interests'] }}</td>
+      </tr>
+      <tr>
+        <th>Preferences</th>
+        <td>{{ customerData['Preferences'] }}</td>
+      </tr>
+      <tr>
+        <th>Income per Year</th>
+        <td>{{ customerData['Income per year'] | currency }}</td>
+      </tr>
+      <tr>
+        <th>Occupation</th>
+        <td>{{ customerData['Occupation'] }}</td>
+      </tr>
+    </table>
+  </div>
+  
