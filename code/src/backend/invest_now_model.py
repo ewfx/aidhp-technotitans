@@ -5,9 +5,10 @@ import torch
 import json
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Current file directory
+DATASET_PATH = os.path.join(BASE_DIR, '..')
 # Open and read the JSON file
-with open('investment_data.json', 'r') as f:
+with open('datasets/investment_data.json', 'r') as f:
     documents = json.load(f)
 
 # Global INstance declaration for semantic search engine using faiss
@@ -48,7 +49,7 @@ def retrieve_documents(query, top_k=14):
 
 
 def final_investment_list(query):
-    relevant_docs = retrieve_documents(query)
+    relevant_docs = retrieve_documents(query,14)
     L = []
     for doc in relevant_docs:
         L.append([doc['title'], doc['website']])
@@ -61,7 +62,7 @@ def classify_investment_insight(customer_data, customer_id):
     
     # Filter the dataset to focus only on the given customer_id
     customer_row = customer_data[customer_data['Customer_Id'] == customer_id]
-    
+    print(customer_row)
     # Initialize a list to hold the insights
     insights = []
     

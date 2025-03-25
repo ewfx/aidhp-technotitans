@@ -2,3 +2,5 @@ openpyxl
 pandas
 transformers
 faiss
+pytest
+python-dotenv
