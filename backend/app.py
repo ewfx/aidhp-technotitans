@@ -75,7 +75,7 @@ def suggest_best_card(customer_id):
 ---
 
 ### 🏆 **Recommended Credit Cards**
-Based on the customer’s financial profile and spending habits, here are the top 3 credit card recommendations:
+Based on the customer’s financial profile and spending habits, here are the top 6 credit card recommendations:
 
 {retrieved_cards_text}
 
@@ -87,6 +87,9 @@ Based on the customer’s financial profile and spending habits, here are the to
     {{"card_name": "Credit Card 1", "why_recommended": "Reason 1", "key_benefits": ["Benefit 1", "Benefit 2"]}},
     {{"card_name": "Credit Card 2", "why_recommended": "Reason 2", "key_benefits": ["Benefit 1", "Benefit 2"]}},
     {{"card_name": "Credit Card 3", "why_recommended": "Reason 3", "key_benefits": ["Benefit 1", "Benefit 2"]}}
+    {{"card_name": "Credit Card 4", "why_recommended": "Reason 4", "key_benefits": ["Benefit 1", "Benefit 2"]}},
+    {{"card_name": "Credit Card 5", "why_recommended": "Reason 5", "key_benefits": ["Benefit 1", "Benefit 2"]}},
+    {{"card_name": "Credit Card 6", "why_recommended": "Reason 6", "key_benefits": ["Benefit 1", "Benefit 2"]}}
   ]
 }}
 
@@ -214,6 +217,32 @@ def recommend_credit_card(customer_id):
     """API Endpoint: Get recommended credit cards for a given customer."""
     result = suggest_best_card(customer_id)
     return jsonify(result)
+
+csv_path = "customer_profile.csv"
+
+def load_login_details():
+    df = pd.read_csv(csv_path)
+    
+    # Strip spaces from column names to avoid mismatches
+    df.columns = df.columns.str.strip()
+
+    # Ensure correct column names match
+    if "Customer_Id" in df.columns and "Password" in df.columns:
+        customers = df[["Customer_Id", "Password"]].copy()
+        customers.rename(columns={"Customer_Id": "username", "Password": "password"}, inplace=True)
+        
+        # Convert to string to prevent type mismatches
+        customers["username"] = customers["username"].astype(str)
+        customers["password"] = customers["password"].astype(str)
+
+        return customers.to_dict(orient="records")
+    else:
+        print("Error: Column names do not match!")
+        return []
+
+@app.route('/api/customers', methods=['GET'])
+def get_customers():
+    return jsonify(load_login_details())
 
 if __name__ == '__main__':
     app.run(debug=True)
