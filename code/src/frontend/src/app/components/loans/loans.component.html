@@ -1,0 +1,27 @@
+<app-navbar></app-navbar> 
+<div class="loans-container">
+    <div class="loans-header">
+        <h2>Personalized Loan Recommendations</h2>
+    </div>
+
+    <div *ngIf="loading" class="loading">
+        Loading recommendations...
+    </div>
+
+    <div *ngIf="error" class="error">
+        {{ error }}
+    </div>
+
+    <div *ngIf="recommendations.length > 0" class="recommendations-grid">
+        <div *ngFor="let loan of recommendations" class="loan-box">
+            <h3>{{ loan.loan_type }}</h3>
+            <p><strong>Benefits:</strong> {{ loan.benefits }}</p>
+            <p><strong>Special Offers:</strong> {{ loan.special_offers }}</p>
+            <p><strong>Processing Time:</strong> {{ loan.processing_time }}</p>
+        </div>
+    </div>
+
+    <div *ngIf="recommendations.length === 0 && !loading && !error" class="no-recommendations">
+        No loan recommendations available at the moment. Check back later or update your profile.
+    </div>
+</div>

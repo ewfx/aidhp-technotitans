@@ -1,0 +1,21 @@
+Card_ID,Name,Category,Interest_Rate (%),Annual_Fee ($),Cashback (%),Rewards,Min_Income ($),Best_For
+CC001,Chase Freedom Unlimited,Cashback,16.49,0,5.0,"Groceries, Dining, Gas",25000,Everyday Spending
+CC002,Capital One Quicksilver,Cashback,19.74,39,1.5,Flat Rate on All Purchases,30000,Simple Cashback
+CC003,American Express Gold,Travel,20.24,250,3.0,"Airlines, Dining",50000,Frequent Travelers
+CC004,Citi Double Cash,Cashback,18.99,0,2.0,Flat 2% on All Purchases,30000,High Cashback
+CC005,Discover it Student Cash,Student,22.99,0,5.0,Rotating Categories,0,College Students
+CC006,Chase Sapphire Preferred,Travel,21.49,95,2.0,"Hotels, Flights, Restaurants",60000,Travel Enthusiasts
+CC007,Wells Fargo Active Cash,Cashback,20.99,0,2.0,All Purchases,35000,Simple Rewards
+CC008,Capital One Venture Rewards,Travel,17.99,95,2.0,"Flights, Hotels, Car Rentals",55000,Frequent Flyers
+CC009,Bank of America Premium Rewards,Travel,19.49,95,2.0,Travel & Dining,60000,High-Income Travelers
+CC010,Secured Mastercard,Secured,26.99,0,1.0,Build Credit,0,Credit Building
+CC001,Chase Freedom Unlimited,Cashback,16.49,0,5.0,"Groceries, Dining, Gas",25000,Everyday Spending
+CC002,Capital One Quicksilver,Cashback,19.74,39,1.5,Flat Rate on All Purchases,30000,Simple Cashback
+CC003,American Express Gold,Travel,20.24,250,3.0,"Airlines, Dining",50000,Frequent Travelers
+CC004,Citi Double Cash,Cashback,18.99,0,2.0,Flat 2% on All Purchases,30000,High Cashback
+CC005,Discover it Student Cash,Student,22.99,0,5.0,Rotating Categories,0,College Students
+CC006,Chase Sapphire Preferred,Travel,21.49,95,2.0,"Hotels, Flights, Restaurants",60000,Travel Enthusiasts
+CC007,Wells Fargo Active Cash,Cashback,20.99,0,2.0,All Purchases,35000,Simple Rewards
+CC008,Capital One Venture Rewards,Travel,17.99,95,2.0,"Flights, Hotels, Car Rentals",55000,Frequent Flyers
+CC009,Bank of America Premium Rewards,Travel,19.49,95,2.0,Travel & Dining,60000,High-Income Travelers
+CC010,Secured Mastercard,Secured,26.99,0,1.0,Build Credit,0,Credit Building
