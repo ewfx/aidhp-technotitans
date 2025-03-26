@@ -3,19 +3,29 @@
 
   <div class="chat-window" *ngIf="isOpen">
     <div class="chat-header">
-      <span>SmartFin Assistant</span>
-      <button (click)="toggleChatbot()">✖</button>
+      <span>💡 SmartFin Assistant</span>
+      <button class="close-btn" (click)="toggleChatbot()">✖</button>
     </div>
 
-    <div class="chat-body">
+    <div class="chat-body" #chatBody>
       <div *ngFor="let msg of messages" [ngClass]="{'user': msg.sender === 'user', 'bot': msg.sender === 'bot'}">
-        {{ msg.text }}
+        <div class="message-bubble">
+          {{ msg.text }}
+          <button *ngIf="msg.audio" class="audio-btn" (click)="toggleAudio(msg)">
+            <span *ngIf="msg.isPlaying">⏸</span> <!-- Pause Icon -->
+            <span *ngIf="msg.isPaused">▶</span> <!-- Play Icon -->
+            <span *ngIf="!msg.isPlaying && !msg.isPaused">🎵</span> <!-- Default -->
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="chat-footer">
-      <input type="text" [(ngModel)]="userInput" placeholder="Type your message..." (keyup.enter)="sendMessage()" />
-      <button (click)="sendMessage()">➤</button>
+      <button class="mic-btn" [ngClass]="{'recording': isRecording}" (mousedown)="startRecording()" (mouseup)="stopRecording()">
+        🎤
+      </button>
+      <input type="text" [(ngModel)]="userInput" placeholder="Type a message..." (keyup.enter)="sendMessage()" />
+      <button class="send-btn" (click)="sendMessage()">➤</button>
     </div>
   </div>
 </div>

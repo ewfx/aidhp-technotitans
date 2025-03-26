@@ -8,6 +8,7 @@ from knowledge_base_model import *
 import requests
 import json
 import re
+from gtts import gTTS
 from flask_cors import CORS
 import openai
 import chromadb
@@ -384,7 +385,7 @@ def chat():
     user_message = request.json.get('message', '').strip()
 
     if not user_message:
-        return jsonify({"reply": "Please ask a valid question."})
+        return jsonify({"reply": "Please ask a valid question.", "audio_url": None})
 
     headers = {
         "Authorization": f"Bearer {openai.api_key}",
@@ -392,13 +393,12 @@ def chat():
     }
     data = {
         "model": "mistral-saba-24b",
-    "messages": [
-            {"role": "system", "content": "You are a financial chatbot. Answer only financial-related questions. If the question is unrelated to finance, respond with: 'I can only answer financial-related questions.' Provide clear, concise answers as a summary. Ensure responses fit within the token limit and end naturally."},
+        "messages": [
+            {"role": "system", "content": "You are a financial chatbot. Answer only financial-related questions. If the question is unrelated to finance, respond with: 'I can only answer financial-related questions.'"},
             {"role": "user", "content": user_message}
         ],
-        "max_tokens": 200,  # Adjust as needed
+        "max_tokens": 200,
         "temperature": 0.7,
-        
     }
 
     try:
@@ -406,16 +406,21 @@ def chat():
         response_json = response.json()
 
         if response.status_code == 200 and "choices" in response_json:
-            reply = response_json["choices"][0]["message"]["content"], 200
+            reply = response_json["choices"][0]["message"]["content"]
         else:
-            print("Groq API Error:", response_json)  # Debugging
-            reply = "Sorry, I couldn't process your request.", 400
+            print("Groq API Error:", response_json)
+            reply = "Sorry, I couldn't process your request."
 
     except Exception as e:
-        print("Request Error:", str(e))  # Debugging
-        reply = "Sorry, an error occurred while processing your request.", 400
+        print("Request Error:", str(e))
+        reply = "Sorry, an error occurred while processing your request."
 
-    return jsonify({"reply": reply})
+    # Generate TTS audio
+    tts = gTTS(text=reply, lang='en')
+    audio_filename = "response.mp3"
+    tts.save(audio_filename)
+
+    return jsonify({"reply": reply, "audio_url": f"http://localhost:5000/audio/{audio_filename}"})
 
 
 @app.route('/recommend-credit-card/<customer_id>', methods=['GET'])

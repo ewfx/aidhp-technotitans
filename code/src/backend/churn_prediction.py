@@ -217,7 +217,7 @@ def schedule_cron_job():
     Schedules the churn prediction and email job to run weekly.
     """
     scheduler = BlockingScheduler()
-    scheduler.add_job(lambda: (predict_churn(), check_and_send_churn_alert()), 'cron', day_of_week='wed', hour=21, minute=10) 
+    scheduler.add_job(lambda: (predict_churn(), check_and_send_churn_alert()), 'cron', day_of_week='wed', hour=20, minute=23) 
     
     logging.info("Scheduler set up: Churn detection job will run every Wednesday.")
     try:
