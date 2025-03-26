@@ -21,6 +21,16 @@ openai.api_key = os.getenv("openai.api_key")
 app = Flask(__name__)
 CORS(app)
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # src/backend directory
+DATASET_DIR = os.path.join(BASE_DIR, "datasets")
+
+TRANSACTION_FILE = os.path.join(DATASET_DIR, "transaction_history.csv")
+CUSTOMER_PROFILE_FILE = os.path.join(DATASET_DIR, "customer_profile.csv")
+
+df = pd.read_csv(TRANSACTION_FILE)  # Now using absolute path
+
 @app.route('/invest-now/<cus_id>', methods=['POST'])
 def invest_now(cus_id):
     try:
@@ -90,7 +100,7 @@ collection = chroma_client.get_or_create_collection(name="credit_cards")
 @app.route('/customer-transactions/<customer_id>', methods=['GET'])
 def get_customer_transactions(customer_id):
     # Read transaction data
-    df = pd.read_csv('datasets/transaction_history.csv')
+    df = pd.read_csv(TRANSACTION_FILE)
     
     # Convert customer_id to string for safe comparison
     customer_id = str(customer_id)
@@ -207,8 +217,8 @@ Based on the customer’s financial profile and spending habits, here are the to
 
 def load_customer_data(customer_id):
     """Fetch customer profile & transaction history from CSV files."""
-    profile_df = pd.read_csv("datasets/customer_profile.csv")
-    transactions_df = pd.read_csv("datasets/transaction_history.csv")
+    profile_df = pd.read_csv(CUSTOMER_PROFILE_FILE)
+    transactions_df = pd.read_csv(TRANSACTION_FILE)
 
     # ✅ Get customer profile
     customer_row = profile_df[profile_df["Customer_Id"] == customer_id]
@@ -270,6 +280,9 @@ def get_relevant_credit_cards(customer_profile, spending_categories, avg_spendin
 @app.route('/recommend-loan', methods=['POST'])
 def recommend_loan():
     data = request.json
+    # Check if customer_id is missing or empty
+    if not data or "customer_id" not in data or not data["customer_id"].strip():
+        return jsonify({"error": "customer_id is required"}), 400  # Return 400 Bad Request
     customer_id = data.get("customer_id")
     return suggest_best_loan(customer_id) 
 
@@ -368,9 +381,6 @@ def get_relevant_loans(customer_profile, spending_categories, avg_spending, paym
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    if not openai.api_key:
-        logging.error("GROQ API Key not found.")
-        return [("Error", "No API key found. Please configure your GROQ API KEY.")]
     user_message = request.json.get('message', '').strip()
 
     if not user_message:
@@ -396,14 +406,14 @@ def chat():
         response_json = response.json()
 
         if response.status_code == 200 and "choices" in response_json:
-            reply = response_json["choices"][0]["message"]["content"]
+            reply = response_json["choices"][0]["message"]["content"], 200
         else:
             print("Groq API Error:", response_json)  # Debugging
-            reply = "Sorry, I couldn't process your request."
+            reply = "Sorry, I couldn't process your request.", 400
 
     except Exception as e:
         print("Request Error:", str(e))  # Debugging
-        reply = "Sorry, an error occurred while processing your request."
+        reply = "Sorry, an error occurred while processing your request.", 400
 
     return jsonify({"reply": reply})
 
@@ -420,7 +430,7 @@ def recommend_credit_cards(customer_id):
     return result 
 
 def load_login_details():
-    df = pd.read_csv("datasets/customer_profile.csv")
+    df = pd.read_csv(CUSTOMER_PROFILE_FILE)
     
     # Strip spaces from column names to avoid mismatches
     df.columns = df.columns.str.strip()
@@ -445,7 +455,7 @@ def get_customers():
 
 @app.route('/api/customer/<customer_id>', methods=['GET'])
 def get_customer_details(customer_id):
-    df = pd.read_csv("datasets/customer_profile.csv")
+    df = pd.read_csv(CUSTOMER_PROFILE_FILE)
     user_data = df[df['Customer_Id'] == customer_id].to_dict(orient='records')
     if user_data:
         user_data[0].pop('Password', None)  # Remove password field

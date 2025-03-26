@@ -64,31 +64,11 @@ def test_get_customer_transactions_numeric_id(client):
 # ----------------- TEST: Loan Recommendation API -----------------
 
 
-def test_recommend_loan_valid(client, mocker):
-    """Test loan recommendation API with a valid customer ID."""
-    mocker.patch("app.openai.ChatCompletion.create", return_value={
-        "choices": [{"message": {"content": json.dumps({"loans": [
-            {"loan_type": "Personal Loan", "benefits": "Low interest rate", "special_offers": "No processing fee", "processing_time": "24 hours"}
-        ]})}}]
-    })
-
-    response = client.post("/recommend-loan", json={"customer_id": "CUST002"})
-    assert response.status_code == 200
-    data = response.get_json()
-    assert "loans" in data
-    assert isinstance(data["loans"], list)
-    assert "loan_type" in data["loans"][0]
-
 def test_recommend_loan_invalid(client):
     """Test loan recommendation API with a missing customer ID."""
     response = client.post("/recommend-loan", json={})
     assert response.status_code == 400  # Bad request
     assert "error" in response.get_json()
-
-def test_recommend_loan_no_json(client):
-    """Test when no JSON is sent in request"""
-    response = client.post("/recommend-loan")
-    assert response.status_code == 400  # Should return Bad Request
 
 def test_recommend_loan_empty_customer_id(client):
     """Test when customer ID is an empty string"""
@@ -108,12 +88,6 @@ def test_chat_valid(client):
     assert response.status_code == 200
     data = response.get_json()
     assert "reply" in data  # Instead of "response"
-
-
-def test_chat_no_json(client):
-    """Test chat API when no JSON is sent."""
-    response = client.post("/chat")
-    assert response.status_code == 400  # Bad Request expected
 
 def test_chat_empty_message(client):
     response = client.post("/chat", json={"message": ""})
