@@ -55,7 +55,7 @@ We combined cutting-edge technologies to deliver a seamless, AI-driven recommend
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/aidhp-technotitans.git
+   git clone https://github.com/ewfx/aidhp-technotitans.git
    ```
 2. Install dependencies  
    Terminal 1 (Frontend)
