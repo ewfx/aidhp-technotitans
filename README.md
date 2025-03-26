@@ -39,7 +39,7 @@ We combined cutting-edge technologies to deliver a seamless, AI-driven recommend
 
 - Backend: Built with Python, leveraging FAISS for efficient similarity search and finally RAG models, SerpAPI and Open AI API for recommendation systems 
 - Frontend: Angular for a responsive and user-friendly interface, with Bootstrap for styling and Chart.js for displaying financial data and insights.
-- AI: grok API for natural language processing in the chatbot and DistilBERT for personalized investment suggestions.
+- AI: groq API for natural language processing in the chatbot and DistilBERT for personalized investment suggestions.
 - Automation: pywin32 for automating personalized email communication and machine learning models to predict churn.
 
 ## 🚧 Challenges We Faced
@@ -99,7 +99,7 @@ We combined cutting-edge technologies to deliver a seamless, AI-driven recommend
 ## 🏗️ Tech Stack
 - 🔹 Frontend: Angular
 - 🔹 Backend: Python
-- 🔹 Other: OpenAI API / ChromaDB / FAISS / SerpAPI
+- 🔹 Other: groq API / ChromaDB / FAISS / SerpAPI
 
 ## 👥 Team
 - **Anjaneyulu Macherla** - [GitHub](https://github.com/amacherla) | [LinkedIn](https://www.linkedin.com/in/anjaneyulu-macherla/)
