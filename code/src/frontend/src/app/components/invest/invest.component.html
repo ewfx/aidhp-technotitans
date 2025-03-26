@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<div class="recommendation-container">
+    <h2> 💵 Recommended Investment Options</h2>
+
+    <!-- Filter Section for Risk and Tenure -->
+    <div class="filter-container">
+        <label for="risk">Risk:</label>
+        <select id="risk" [(ngModel)]="selectedRisk">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <label for="tenure">Tenure (Years):</label>
+        <input id="tenure" type="number" [(ngModel)]="selectedTenure" min="1" max="40" />
+
+        <button class="btn-wf-primary" (click)="searchRecommendations()">Search</button>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div *ngIf="isLoading" class="loading-spinner">
+        <p>Loading recommendations...</p>
+    </div>
+
+    <!-- Recommended Credit Cards Section -->
+    <div *ngIf="creditCardRecommendation">
+        <div class="card-container">
+            <ng-container *ngFor="let card of creditCardRecommendation.investment_recommendation">
+                <div class="card">
+                    <h3><a [href]="card.website" target="_blank">{{ card.title }}</a></h3>
+                    <p><strong>Why Recommended:</strong> {{ card.content }}</p>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+    <!-- Chatbot Component -->
+    <app-chatbot></app-chatbot>
+</div>

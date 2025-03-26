@@ -1,0 +1,166 @@
+// Wells Fargo Color Palette
+$wf-red: #b31b1b;        // Wells Fargo red
+$wf-light-red: #fbe4e4;   // Light red for soft backgrounds
+$wf-gold: #ffc72c;        // Gold accent
+$wf-dark-gray: #333;      // Dark text for readability
+$white: #fff;
+
+// General Container Styling
+
+.knowledge-container {
+    color: #b31b1b;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: $white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Section Heading Style
+.content-section {
+    margin-top: 20px;
+    text-align: center;
+    
+    h2 {
+        color: $wf-red;       // Heading in Wells Fargo red
+        font-size: 28px;      // Prominent heading
+        font-weight: 700;     // Bold text for emphasis
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: black;       // Section heading in red
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        color: $wf-red;       // Subheadings (h4) in red
+        font-size: 18px;
+        font-weight: bold;
+    }
+    a{
+        color: #b31b1b;
+    }
+}
+
+// Horizontal Scroll with Centered Cards
+.scroll-container {
+    display: flex;
+    justify-content: center;  // Center the cards
+    overflow-x: auto;
+    gap: 20px;
+    max-width: 1000px;  // Limit to 3 cards per view
+    padding: 10px 0;
+}
+
+// Styling for Individual Cards
+.card {
+    background: $white;
+    border: 2px solid $wf-light-red;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: left;
+    transition: background 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background: $wf-light-red;
+        border-color: $wf-red;
+    }
+
+    h3 {
+        color: $wf-red;       // Heading inside card in Wells Fargo red
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+
+        a {
+            color: $wf-red;    // Anchor tag color in red
+            text-decoration: none;
+
+            &:hover {
+                color: darken($wf-red, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    p {
+        color: $wf-dark-gray;  // Paragraph text in dark gray for readability
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+// Embed Styling
+iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid $wf-red;
+}
+
+// Input Section (Select and Number)
+input[type="number"],
+select {
+    border: 2px solid $wf-red;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    color: $wf-dark-gray;    // Text color in dark gray
+    width: 150px;
+
+    &:focus {
+        outline: none;
+        border-color: $wf-gold;
+        box-shadow: 0 0 8px rgba(255, 199, 44, 0.5);
+    }
+}
+
+// Button Styling
+button {
+    background: $wf-red;
+    color: $white;   // Button text in white
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background: darken($wf-red, 10%);
+        transform: scale(1.05);
+    }
+
+    &:active {
+        background: darken($wf-red, 20%);
+    }
+}
+
+// Spinner Styling (Optional)
+.loading-spinner p {
+    color: $wf-red;      // Spinner text in Wells Fargo red
+    font-weight: bold;
+}
+
+// FLAG
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: space-between;  /* Ensures space around cards */
+    max-width: 960px;  /* To fit three cards per scroll */
+}
+
+iframe {
+    margin-top: 10px;
+    border-radius: 8px;
+}

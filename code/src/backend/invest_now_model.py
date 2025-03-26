@@ -52,7 +52,7 @@ def final_investment_list(query):
     relevant_docs = retrieve_documents(query,14)
     L = []
     for doc in relevant_docs:
-        L.append([doc['title'], doc['website']])
+        L.append({"title":doc['title'], "website":doc['website'],"about":doc['about'], "content":doc['content']})
         # print(f"Title: {doc['title']}\n")
     return L
 

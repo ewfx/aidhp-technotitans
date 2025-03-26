@@ -17,15 +17,18 @@ logging.getLogger("chromadb").setLevel(logging.WARNING)
 
 
 
+
+
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/invest-now/<cus_id>', methods=['POST'])
 def invest_now(cus_id):
     try:
         # Get parameters from the query string instead of JSON
-        risk_level = request.json.get("risk_level", "Medium")
-        max_tenure = int(request.json.get("max_tenure", 5))
-
+        risk_level = request.json.get("risk", "Medium")
+        max_tenure = int(request.json.get("tenure", 5))
+        print("hihihih",risk_level, max_tenure)
         # Determine term preference based on max_tenure
         if max_tenure > 7:
             ten_str = "long"
@@ -46,8 +49,10 @@ def invest_now(cus_id):
                 DATA = ""
         except Exception as e:
             return jsonify({"error": f"Failed to read customer dataset: {e}"}), 500
-
-        text = f"{risk_level} risk and {ten_str} term and {DATA[0]}"
+        if risk_level == 'low':
+            text = f"{risk_level} risk and {ten_str} term"
+        else:
+            text = f"{risk_level} risk and {ten_str} term and {DATA[0]}"
         L = final_investment_list(text)
         return jsonify({"query": text, "investment_recommendation": L})
     except Exception as e:
@@ -59,10 +64,12 @@ def invest_now(cus_id):
 
 @app.route('/knowledge_center/<customer_id>', methods=['GET'])
 def search(customer_id):
+    print(customer_id)
     if not customer_id or customer_id == "None":
         return jsonify({"error": "Invalid customer ID"}), 400
 
     try:
+        print("here")
         search_result = search_results(customer_id)
         print(search_result)
     except Exception as e:
@@ -70,11 +77,6 @@ def search(customer_id):
     
     # Return summarized search results
     return search_result
-
-
-
-app = Flask(__name__)
-CORS(app)
 
  
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"  
@@ -85,7 +87,6 @@ openai.api_key = "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"
 
 # ✅ Load embedding model
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
-
 
 # ✅ Initialize ChromaDB client
 chroma_client = chromadb.PersistentClient(path="chroma_db")
