@@ -4,3 +4,17 @@ transformers
 faiss
 pytest
 python-dotenv
+flask
+flask-cors
+requests
+openai
+chromadb
+sentence-transformers
+python-dotenv
+gtts
+numpy
+apscheduler
+pywin32
+scikit-learn
+seaborn
+matplotlib
