@@ -1,5 +1,4 @@
-# 🚀 Project Name
-
+# 🚀 AI Driven Hyper Personalized System - Technotitans
 ## 📌 Table of Contents
 - [Introduction](#-introduction)
 - [Demo](#-demo)
