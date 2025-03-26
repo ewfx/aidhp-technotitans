@@ -3,7 +3,7 @@
 <div class="recommendation-container">
     <h2>💳 Recommended Credit Cards</h2>
 
-    <div *ngIf="creditCardRecommendation">
+    <div *ngIf="creditCardRecommendation; else loading">
         <div class="card-container">
             <ng-container *ngFor="let card of creditCardRecommendation.recommendations">
                 <div class="card">
@@ -16,6 +16,9 @@
             </ng-container>
         </div>
     </div>
+    <ng-template #loading>
+        <p class="loading-text">Loading recommendations... Please wait.</p>
+    </ng-template>
 </div>
 
 <app-chatbot></app-chatbot>

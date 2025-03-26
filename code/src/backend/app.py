@@ -12,12 +12,11 @@ from flask_cors import CORS
 import openai
 import chromadb
 from sentence_transformers import SentenceTransformer
+from dotenv import load_dotenv
+load_dotenv()
 import logging
 logging.getLogger("chromadb").setLevel(logging.WARNING)
-
-
-
-
+openai.api_key = os.getenv("openai.api_key")
 
 app = Flask(__name__)
 CORS(app)
@@ -78,12 +77,8 @@ def search(customer_id):
     # Return summarized search results
     return search_result
 
- 
-GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"  
-
-# ✅ Configure Groq API
 openai.api_base = "https://api.groq.com/openai/v1"
-openai.api_key = "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" 
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"  
 
 # ✅ Load embedding model
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
@@ -373,6 +368,9 @@ def get_relevant_loans(customer_profile, spending_categories, avg_spending, paym
 
 @app.route('/chat', methods=['POST'])
 def chat():
+    if not openai.api_key:
+        logging.error("GROQ API Key not found.")
+        return [("Error", "No API key found. Please configure your GROQ API KEY.")]
     user_message = request.json.get('message', '').strip()
 
     if not user_message:
@@ -415,6 +413,11 @@ def recommend_credit_card(customer_id):
     """API Endpoint: Get recommended credit cards for a given customer."""
     result = suggest_best_card(customer_id)
     return jsonify(result)
+
+def recommend_credit_cards(customer_id):
+      # Ensure Flask's app context is available
+    result = suggest_best_card(customer_id)
+    return result 
 
 def load_login_details():
     df = pd.read_csv("datasets/customer_profile.csv")

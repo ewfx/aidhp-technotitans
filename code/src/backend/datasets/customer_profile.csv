@@ -1,5 +1,5 @@
 Customer_Id,Age,Gender,Location,Interests,Preferences,Income per year,Occupation,Password
-CUST2025B,57,Male,New York,"Mortgage Payments, Travel, Streaming Services, Gaming","Credit Cards, Cashback, Early Access Deals",36416,Banker,pass1
+CUST001,57,Male,New York,"Mortgage Payments, Travel, Streaming Services, Gaming","Credit Cards, Cashback, Early Access Deals",36416,Banker,pass1
 CUST002,25,Male,Boston,"Mortgage Payments, Sustainable Living, Travel","Low Interest Rates, Cashback, Loyalty Programs",195837,Entrepreneur,pass2
 CUST003,42,Male,Chicago,"Travel, Investments, Luxury Shopping","Personal Loan, Credit Cards",47489,Data Scientist,pass3
 CUST004,44,Female,San Francisco,"Sustainable Living, Fitness, Healthcare, Dining","Home Loan, Credit Cards, Discounts, Rewards",96037,Marketing Manager,pass4

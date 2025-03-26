@@ -3,6 +3,7 @@ import { LoanRecommendationService } from '../../services/loan-recommendation.se
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { ChatbotComponent } from '../chatbot/chatbot.component';
 
 interface Loan {
   loan_type: string;
@@ -14,7 +15,7 @@ interface Loan {
 @Component({
   selector: 'app-loans',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, NavbarComponent], // ✅ Ensure HttpClientModule is imported
+  imports: [CommonModule, HttpClientModule, NavbarComponent,ChatbotComponent], // ✅ Ensure HttpClientModule is imported
   templateUrl: './loans.component.html',
   styleUrls: ['./loans.component.scss'],
   providers: [LoanRecommendationService], // ✅ Provide the service

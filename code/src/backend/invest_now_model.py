@@ -42,14 +42,14 @@ def encode_query(query):
         query_embedding = model(**inputs).last_hidden_state.mean(dim=1).cpu().numpy()
     return query_embedding
 
-def retrieve_documents(query, top_k=14):
+def retrieve_documents(query, top_k=10):
     query_embedding = encode_query(query)
     D, I = index.search(query_embedding, top_k)  
     return [documents[i] for i in I[0]]
 
 
-def final_investment_list(query):
-    relevant_docs = retrieve_documents(query,14)
+def final_investment_list(query,n = 10):
+    relevant_docs = retrieve_documents(query,n)
     L = []
     for doc in relevant_docs:
         L.append({"title":doc['title'], "website":doc['website'],"about":doc['about'], "content":doc['content']})
