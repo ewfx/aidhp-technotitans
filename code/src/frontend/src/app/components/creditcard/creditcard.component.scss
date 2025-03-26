@@ -1,0 +1,71 @@
+// Wells Fargo Color Palette
+$wf-red: #b31b1b;        // Wells Fargo red
+$wf-light-red: #fbe4e4;   // Light red for soft backgrounds
+$wf-gold: #ffc72c;        // Gold accent
+$wf-dark-gray: #333;      // Dark text for readability
+$white: #fff;
+
+.recommendation-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: $wf-red;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+}
+
+.card h3 {
+    color: $wf-red;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: $wf-dark-gray;
+    font-size: 16px;
+}
+.card p strong{
+    color: #333;
+    
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    font-size: 16px;
+    color: #444;
+    background: #e8f5e9;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+.loading-text {
+    color: $wf-red;
+    font-weight: bold;
+}

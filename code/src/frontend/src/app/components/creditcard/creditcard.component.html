@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<div class="recommendation-container">
+    <h2>💳 Recommended Credit Cards</h2>
+
+    <div *ngIf="creditCardRecommendation; else loading">
+        <div class="card-container">
+            <ng-container *ngFor="let card of creditCardRecommendation.recommendations">
+                <div class="card">
+                    <h3>{{ card.card_name }}</h3>
+                    <p><strong>Why Recommended:</strong> {{ card.why_recommended }}</p>
+                    <ul>
+                        <li *ngFor="let benefit of card.key_benefits">✅ {{ benefit }}</li>
+                    </ul>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <ng-template #loading>
+        <p class="loading-text">Loading recommendations... Please wait.</p>
+    </ng-template>
+</div>
+
+<app-chatbot></app-chatbot>

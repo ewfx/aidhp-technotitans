@@ -1,0 +1,201 @@
+Transaction_ID,Customer_ID,Transaction_Date,Transaction_Type,Transaction_Amount,Category,Payment_Method,Loan_Usage,Rewards_Earned,Credit_Score_Impact,Outstanding_Debt,Income_to_Expense_Ratio
+TXN001,CUST016,04-03-2023,Loan Payment,2053.46,Technology,Net Banking,Home Loan,0,Positive,40036.22,0.88
+TXN002,CUST015,16-09-2023,Subscription,151.27,Entertainment,Debit Card,-,32,Positive,0,0.56
+TXN003,CUST005,24-07-2023,Purchase,8335.2,Real Estate,Cash,-,55,Negative,0,0.64
+TXN004,CUST010,01-06-2023,EMI,13737.75,Travel,Debit Card,Home Loan,0,Positive,41916.97,0.61
+TXN005,CUST020,02-11-2023,Loan Payment,1462.77,Dining,Credit Card,Personal Loan,0,Negative,40894.71,0.89
+TXN006,CUST004,19-08-2023,Loan Payment,12378.09,Dining,Wallet,Home Loan,0,Negative,37752.27,0.95
+TXN007,CUST008,02-04-2023,Subscription,6468.76,Real Estate,Net Banking,-,25,Negative,0,0.94
+TXN008,CUST012,19-01-2023,Investment,13525.14,Technology,Cash,-,0,Negative,0,0.6
+TXN009,CUST003,06-12-2023,EMI,12708.72,Dining,Net Banking,Home Loan,0,Negative,39954.38,0.6
+TXN010,CUST018,15-08-2023,Subscription,18176.98,Shopping,Wallet,-,40,Negative,0,0.58
+TXN011,CUST017,19-12-2023,Loan Payment,17182.53,Healthcare,Debit Card,-,0,Negative,38464.68,0.58
+TXN012,CUST007,02-07-2023,Subscription,15546.16,Travel,Debit Card,-,24,Positive,0,0.81
+TXN013,CUST006,08-10-2023,Investment,19707.56,Shopping,Wallet,-,0,Positive,0,0.92
+TXN014,CUST017,05-07-2023,EMI,17771.54,Healthcare,Wallet,Personal Loan,0,Neutral,4479.9,0.88
+TXN015,CUST009,27-08-2023,Subscription,7361.77,Insurance,Debit Card,-,82,Positive,0,0.64
+TXN016,CUST014,09-10-2023,EMI,710.21,Healthcare,Debit Card,Credit Card EMI,0,Positive,4889.85,0.72
+TXN017,CUST013,23-02-2023,Investment,1992.39,Technology,Debit Card,-,0,Negative,0,0.51
+TXN018,CUST012,23-08-2023,Loan Payment,8390.51,Technology,Net Banking,Personal Loan,0,Negative,29094.38,0.86
+TXN019,CUST015,29-09-2023,EMI,1885.77,Insurance,Credit Card,Credit Card EMI,0,Neutral,23652.15,0.87
+TXN020,CUST009,25-09-2023,Investment,3660.16,Travel,Net Banking,-,0,Positive,0,0.77
+TXN021,CUST007,24-01-2023,Investment,8320.54,Shopping,Wallet,-,0,Positive,0,0.79
+TXN022,CUST016,25-08-2023,Investment,14006.79,Technology,Net Banking,-,0,Negative,0,0.53
+TXN023,CUST018,01-05-2023,Purchase,14507.44,Healthcare,Credit Card,-,43,Positive,0,0.64
+TXN024,CUST006,02-03-2023,Purchase,4692.14,Real Estate,Wallet,-,58,Negative,0,0.74
+TXN025,CUST010,23-12-2023,EMI,18684.9,Entertainment,Wallet,Home Loan,0,Positive,3948.41,0.72
+TXN026,CUST001,28-04-2023,Investment,4433.84,Healthcare,Cash,-,0,Positive,0,0.8
+TXN027,CUST001,19-04-2023,Subscription,18397.49,Dining,Debit Card,-,44,Negative,0,0.61
+TXN028,CUST005,14-03-2023,Investment,11925.27,Insurance,Cash,-,0,Positive,0,0.69
+TXN029,CUST008,06-05-2023,Subscription,15359.73,Real Estate,Credit Card,-,65,Negative,0,0.7
+TXN030,CUST007,13-04-2023,Purchase,7021.68,Real Estate,Wallet,-,56,Neutral,0,0.89
+TXN031,CUST016,21-12-2023,Loan Payment,8813.78,Shopping,Debit Card,-,0,Positive,21149.97,0.55
+TXN032,CUST001,27-04-2023,Subscription,15009.54,Entertainment,Cash,-,74,Negative,0,0.72
+TXN033,CUST001,10-08-2023,EMI,6676.43,Real Estate,Debit Card,Personal Loan,0,Neutral,19755.31,0.59
+TXN034,CUST004,23-05-2023,Purchase,10546.37,Insurance,Debit Card,-,31,Neutral,0,0.84
+TXN035,CUST015,22-11-2023,Subscription,5408.65,Entertainment,Cash,-,93,Positive,0,0.7
+TXN036,CUST019,28-01-2023,Loan Payment,4611.96,Travel,Wallet,Personal Loan,0,Positive,15824.32,0.57
+TXN037,CUST004,07-01-2023,Subscription,3502.45,Dining,Net Banking,-,77,Neutral,0,0.78
+TXN038,CUST020,23-03-2023,Bill Payment,2265.03,Technology,Credit Card,-,0,Positive,0,0.79
+TXN039,CUST004,14-07-2023,Subscription,8710.7,Real Estate,Net Banking,-,42,Positive,0,0.53
+TXN040,CUST004,05-03-2023,Bill Payment,15431.26,Real Estate,Credit Card,-,0,Negative,0,0.79
+TXN041,CUST020,16-11-2023,EMI,14496.47,Real Estate,Wallet,-,0,Neutral,40740.33,0.78
+TXN042,CUST018,20-04-2023,Subscription,6401.29,Technology,Net Banking,-,12,Positive,0,0.78
+TXN043,CUST020,28-01-2023,Loan Payment,1064.76,Entertainment,Wallet,Home Loan,0,Negative,43998.16,0.54
+TXN044,CUST010,08-09-2023,Subscription,4709.53,Dining,Cash,-,46,Negative,0,0.7
+TXN045,CUST010,25-12-2023,Subscription,14206.26,Insurance,Credit Card,-,25,Negative,0,0.6
+TXN046,CUST017,12-09-2023,Investment,2314.92,Healthcare,Cash,-,0,Negative,0,0.77
+TXN047,CUST006,24-08-2023,EMI,17456.09,Travel,Credit Card,Personal Loan,0,Neutral,9390.52,0.77
+TXN048,CUST014,09-09-2023,Purchase,3068.29,Real Estate,Credit Card,-,20,Negative,0,0.51
+TXN049,CUST002,07-08-2023,Subscription,4671.38,Dining,Net Banking,-,79,Neutral,0,0.63
+TXN050,CUST002,07-03-2023,Bill Payment,17607.2,Real Estate,Cash,-,0,Neutral,0,0.92
+TXN051,CUST006,24-11-2023,EMI,6930.26,Travel,Debit Card,Personal Loan,0,Neutral,33224.05,0.79
+TXN052,CUST003,23-08-2023,Bill Payment,8287.12,Entertainment,Cash,-,0,Negative,0,0.79
+TXN053,CUST020,30-12-2023,EMI,13467.52,Technology,Credit Card,Credit Card EMI,0,Positive,3928.16,0.65
+TXN054,CUST009,01-07-2023,Loan Payment,14181.79,Shopping,Credit Card,-,0,Positive,23628.82,0.71
+TXN055,CUST002,25-11-2023,Investment,17856.73,Healthcare,Debit Card,-,0,Negative,0,0.8
+TXN056,CUST002,23-02-2023,Purchase,6805.05,Travel,Cash,-,0,Positive,0,0.73
+TXN057,CUST005,25-08-2023,Investment,9492.3,Dining,Cash,-,0,Positive,0,0.63
+TXN058,CUST014,12-07-2023,Subscription,18050.72,Healthcare,Debit Card,-,39,Positive,0,0.9
+TXN059,CUST004,22-05-2023,EMI,3331.91,Travel,Credit Card,-,0,Positive,35549.98,0.93
+TXN060,CUST005,18-11-2023,Bill Payment,7354.79,Travel,Wallet,-,0,Positive,0,0.73
+TXN061,CUST012,18-04-2023,Purchase,15241.18,Shopping,Net Banking,-,60,Neutral,0,0.54
+TXN062,CUST020,24-11-2023,Purchase,6337.37,Travel,Wallet,-,1,Negative,0,0.93
+TXN063,CUST016,06-01-2023,Investment,4648.92,Travel,Credit Card,-,0,Neutral,0,0.87
+TXN064,CUST008,01-04-2023,Loan Payment,19104.09,Dining,Debit Card,-,0,Neutral,22226.77,0.6
+TXN065,CUST016,25-04-2023,Bill Payment,12154.18,Healthcare,Wallet,-,0,Negative,0,0.77
+TXN066,CUST004,04-08-2023,Loan Payment,6904.62,Healthcare,Cash,-,0,Neutral,49919.19,0.56
+TXN067,CUST013,03-10-2023,Subscription,7381.17,Entertainment,Net Banking,-,84,Positive,0,0.55
+TXN068,CUST001,23-06-2023,Purchase,861.93,Insurance,Net Banking,-,89,Positive,0,0.85
+TXN069,CUST003,07-08-2023,Purchase,7549.77,Insurance,Cash,-,2,Neutral,0,0.57
+TXN070,CUST017,24-09-2023,Investment,1049.56,Healthcare,Cash,-,0,Neutral,0,0.69
+TXN071,CUST015,29-12-2023,Subscription,9201.9,Healthcare,Debit Card,-,6,Positive,0,0.84
+TXN072,CUST011,16-01-2023,EMI,10289.36,Shopping,Net Banking,Home Loan,0,Negative,18997.57,0.61
+TXN073,CUST004,25-12-2023,Loan Payment,13715.76,Insurance,Wallet,Credit Card EMI,0,Negative,42389.19,0.7
+TXN074,CUST006,23-07-2023,Bill Payment,15104.89,Real Estate,Wallet,-,0,Neutral,0,0.59
+TXN075,CUST020,07-07-2023,Subscription,3741.6,Shopping,Cash,-,86,Neutral,0,0.89
+TXN076,CUST010,15-03-2023,Purchase,3152.07,Real Estate,Wallet,-,4,Negative,0,0.71
+TXN077,CUST016,18-11-2023,Purchase,4739.81,Shopping,Credit Card,-,40,Negative,0,0.59
+TXN078,CUST015,01-10-2023,Bill Payment,6574.93,Real Estate,Wallet,-,0,Neutral,0,0.78
+TXN079,CUST004,14-12-2023,Loan Payment,12392.99,Healthcare,Net Banking,Credit Card EMI,0,Negative,14313.7,0.53
+TXN080,CUST005,07-06-2023,EMI,15855.9,Real Estate,Cash,-,0,Negative,16744.42,0.73
+TXN081,CUST009,09-12-2023,Bill Payment,4759.59,Entertainment,Debit Card,-,0,Neutral,0,0.79
+TXN082,CUST016,26-02-2023,EMI,6742.87,Shopping,Debit Card,Credit Card EMI,0,Negative,11661.1,0.91
+TXN083,CUST011,04-07-2023,Bill Payment,8587.53,Travel,Debit Card,-,0,Neutral,0,0.71
+TXN084,CUST006,30-11-2023,EMI,15451.54,Dining,Cash,-,0,Neutral,24425.79,0.68
+TXN085,CUST015,08-04-2023,Subscription,13713.41,Real Estate,Net Banking,-,24,Neutral,0,0.55
+TXN086,CUST006,19-06-2023,Subscription,14033.14,Shopping,Wallet,-,94,Positive,0,0.95
+TXN087,CUST020,17-12-2023,EMI,16449.2,Real Estate,Wallet,Personal Loan,0,Neutral,40572.12,0.51
+TXN088,CUST007,16-08-2023,Investment,14884.71,Dining,Credit Card,-,0,Neutral,0,0.71
+TXN089,CUST020,06-07-2023,Loan Payment,3262.28,Dining,Wallet,Personal Loan,0,Neutral,36356.32,0.56
+TXN090,CUST012,26-03-2023,Subscription,11926.26,Technology,Wallet,-,11,Positive,0,0.93
+TXN091,CUST005,23-06-2023,Loan Payment,12151.3,Dining,Credit Card,Home Loan,0,Negative,40212.39,0.56
+TXN092,CUST019,11-03-2023,EMI,18908.87,Entertainment,Debit Card,Personal Loan,0,Positive,9438.2,0.62
+TXN093,CUST012,31-12-2023,EMI,16551.16,Entertainment,Net Banking,Credit Card EMI,0,Neutral,32047.48,0.67
+TXN094,CUST006,01-04-2023,Investment,8229.44,Insurance,Wallet,-,0,Positive,0,0.54
+TXN095,CUST001,21-07-2023,EMI,6749.44,Technology,Cash,Personal Loan,0,Neutral,42943.39,0.92
+TXN096,CUST005,08-11-2023,Subscription,4784.78,Technology,Credit Card,-,47,Positive,0,0.91
+TXN097,CUST017,14-09-2023,Investment,6587.79,Healthcare,Credit Card,-,0,Neutral,0,0.91
+TXN098,CUST002,16-11-2023,Investment,7116.7,Healthcare,Wallet,-,0,Positive,0,0.51
+TXN099,CUST010,17-05-2023,Loan Payment,6130.33,Dining,Debit Card,Personal Loan,0,Negative,36748.13,0.91
+TXN100,CUST014,12-05-2023,Purchase,15422.09,Insurance,Credit Card,-,52,Positive,0,0.92
+TXN101,CUST009,13-07-2023,EMI,12341.51,Entertainment,Debit Card,Home Loan,0,Negative,7263.38,0.66
+TXN102,CUST003,03-01-2023,Purchase,3257.41,Real Estate,Credit Card,-,55,Negative,0,0.86
+TXN103,CUST019,07-11-2023,Purchase,2436.09,Insurance,Wallet,-,51,Neutral,0,0.61
+TXN104,CUST005,24-07-2023,Subscription,3234.12,Real Estate,Cash,-,34,Positive,0,0.64
+TXN105,CUST020,29-07-2023,EMI,5381.47,Healthcare,Credit Card,Home Loan,0,Neutral,39204.79,0.54
+TXN106,CUST006,10-09-2023,Loan Payment,15228.11,Technology,Debit Card,Credit Card EMI,0,Positive,18453.66,0.68
+TXN107,CUST002,20-12-2023,Purchase,11583.45,Entertainment,Debit Card,-,27,Negative,0,0.6
+TXN108,CUST013,21-04-2023,Purchase,7104.42,Technology,Wallet,-,82,Neutral,0,0.6
+TXN109,CUST009,06-09-2023,EMI,13355.09,Insurance,Wallet,-,0,Neutral,29466.54,0.68
+TXN110,CUST006,05-03-2023,Loan Payment,16736.43,Technology,Cash,-,0,Positive,21846.6,0.59
+TXN111,CUST003,06-03-2023,Purchase,12842.18,Dining,Net Banking,-,35,Negative,0,0.57
+TXN112,CUST013,16-03-2023,Purchase,9879.15,Travel,Debit Card,-,69,Positive,0,0.5
+TXN113,CUST004,20-05-2023,Purchase,13970.05,Travel,Credit Card,-,53,Positive,0,0.73
+TXN114,CUST016,13-05-2023,Investment,9614.05,Dining,Net Banking,-,0,Positive,0,0.58
+TXN115,CUST008,13-04-2023,Subscription,3599.97,Entertainment,Cash,-,22,Negative,0,0.95
+TXN116,CUST007,23-04-2023,Subscription,11500.25,Technology,Net Banking,-,91,Neutral,0,0.54
+TXN117,CUST019,30-09-2023,Investment,19724.07,Dining,Wallet,-,0,Positive,0,0.78
+TXN118,CUST019,05-04-2023,EMI,9957.33,Insurance,Wallet,-,0,Neutral,32947.2,0.54
+TXN119,CUST007,04-03-2023,Loan Payment,661.71,Real Estate,Wallet,Home Loan,0,Neutral,22941,0.62
+TXN120,CUST011,13-01-2023,EMI,16582.45,Entertainment,Wallet,Home Loan,0,Neutral,17181.33,0.62
+TXN121,CUST017,14-07-2023,Investment,5008.82,Real Estate,Cash,-,0,Neutral,0,0.62
+TXN122,CUST006,13-07-2023,Loan Payment,3431.4,Real Estate,Cash,-,0,Negative,7735.63,0.51
+TXN123,CUST014,07-07-2023,Purchase,14296.68,Shopping,Wallet,-,50,Positive,0,0.87
+TXN124,CUST017,15-11-2023,Bill Payment,3979.18,Technology,Net Banking,-,0,Neutral,0,0.62
+TXN125,CUST007,01-07-2023,Purchase,7382.93,Entertainment,Cash,-,35,Positive,0,0.84
+TXN126,CUST010,12-12-2023,Investment,5116.03,Technology,Net Banking,-,0,Negative,0,0.73
+TXN127,CUST014,08-01-2023,Investment,675.34,Shopping,Credit Card,-,0,Negative,0,0.8
+TXN128,CUST003,24-01-2023,EMI,15728.9,Dining,Debit Card,-,0,Positive,48798.54,0.86
+TXN129,CUST013,25-12-2023,Bill Payment,1599.05,Shopping,Wallet,-,0,Negative,0,0.71
+TXN130,CUST008,08-05-2023,Loan Payment,654.08,Shopping,Wallet,Credit Card EMI,0,Negative,25313.24,0.86
+TXN131,CUST006,08-01-2023,Investment,13814.04,Healthcare,Credit Card,-,0,Negative,0,0.69
+TXN132,CUST019,10-10-2023,Loan Payment,2568.51,Technology,Cash,Home Loan,0,Negative,39781.38,0.82
+TXN133,CUST003,30-01-2023,EMI,17741.98,Travel,Debit Card,Personal Loan,0,Neutral,2637.74,0.93
+TXN134,CUST013,09-03-2023,EMI,7600.82,Travel,Debit Card,Home Loan,0,Positive,12506.84,0.81
+TXN135,CUST020,04-07-2023,Investment,14827.28,Insurance,Cash,-,0,Positive,0,0.53
+TXN136,CUST012,29-04-2023,Loan Payment,2759.07,Shopping,Debit Card,Personal Loan,0,Positive,31949.64,0.84
+TXN137,CUST010,10-09-2023,Investment,8534.51,Technology,Credit Card,-,0,Neutral,0,0.7
+TXN138,CUST004,10-11-2023,Purchase,653.41,Healthcare,Net Banking,-,33,Negative,0,0.55
+TXN139,CUST007,21-11-2023,EMI,1362.13,Healthcare,Net Banking,-,0,Negative,13729.04,0.86
+TXN140,CUST004,04-08-2023,Bill Payment,7267.49,Entertainment,Debit Card,-,0,Negative,0,0.94
+TXN141,CUST003,12-02-2023,EMI,17753.78,Travel,Cash,Personal Loan,0,Positive,49629.25,0.88
+TXN142,CUST018,07-04-2023,Subscription,18827.29,Insurance,Credit Card,-,58,Neutral,0,0.94
+TXN143,CUST011,30-12-2023,Purchase,8306.24,Healthcare,Debit Card,-,29,Positive,0,0.76
+TXN144,CUST015,27-12-2023,Purchase,7974.56,Real Estate,Credit Card,-,2,Negative,0,0.53
+TXN145,CUST008,27-05-2023,Purchase,16480.43,Shopping,Net Banking,-,87,Neutral,0,0.77
+TXN146,CUST007,29-05-2023,Subscription,6877.52,Entertainment,Wallet,-,55,Negative,0,0.87
+TXN147,CUST014,24-08-2023,Purchase,1712.67,Shopping,Wallet,-,43,Negative,0,0.74
+TXN148,CUST004,25-01-2023,Subscription,18304.88,Entertainment,Net Banking,-,73,Positive,0,0.6
+TXN149,CUST018,07-09-2023,Purchase,17436.87,Entertainment,Debit Card,-,98,Positive,0,0.94
+TXN150,CUST015,04-07-2023,Bill Payment,6063.3,Technology,Debit Card,-,0,Neutral,0,0.73
+TXN151,CUST004,13-09-2023,Investment,9666.33,Healthcare,Debit Card,-,0,Positive,0,0.87
+TXN152,CUST017,11-03-2023,Investment,16927.49,Technology,Net Banking,-,0,Positive,0,0.81
+TXN153,CUST010,21-12-2023,Bill Payment,1486.71,Healthcare,Net Banking,-,0,Positive,0,0.63
+TXN154,CUST019,10-08-2023,EMI,2883.61,Insurance,Wallet,Personal Loan,0,Neutral,41229.39,0.7
+TXN155,CUST012,25-12-2023,Bill Payment,7447.55,Entertainment,Net Banking,-,0,Positive,0,0.74
+TXN156,CUST014,30-03-2023,Subscription,6646.07,Dining,Net Banking,-,96,Positive,0,0.77
+TXN157,CUST019,19-09-2023,Subscription,13957.51,Entertainment,Net Banking,-,50,Neutral,0,0.5
+TXN158,CUST008,11-07-2023,Loan Payment,18191.56,Real Estate,Credit Card,Credit Card EMI,0,Positive,6967.56,0.69
+TXN159,CUST016,14-11-2023,Subscription,16167.17,Dining,Cash,-,2,Negative,0,0.54
+TXN160,CUST009,11-11-2023,Purchase,8078.46,Technology,Wallet,-,89,Negative,0,0.84
+TXN161,CUST010,31-05-2023,Bill Payment,13021,Dining,Net Banking,-,0,Positive,0,0.94
+TXN162,CUST003,30-06-2023,Investment,18580.8,Technology,Debit Card,-,0,Negative,0,0.88
+TXN163,CUST016,18-04-2023,Loan Payment,659.57,Technology,Debit Card,Home Loan,0,Neutral,39083.41,0.51
+TXN164,CUST018,19-05-2023,EMI,9467.07,Real Estate,Cash,Credit Card EMI,0,Negative,5116.94,0.93
+TXN165,CUST013,14-10-2023,EMI,3971.74,Insurance,Credit Card,Personal Loan,0,Neutral,40714.4,0.74
+TXN166,CUST017,07-05-2023,EMI,13593.7,Shopping,Wallet,Personal Loan,0,Neutral,47920.33,0.68
+TXN167,CUST013,07-01-2023,Loan Payment,4841.67,Shopping,Wallet,Personal Loan,0,Neutral,2929.86,0.76
+TXN168,CUST014,02-07-2023,Purchase,8944.52,Travel,Wallet,-,71,Positive,0,0.74
+TXN169,CUST011,09-04-2023,EMI,11770.05,Shopping,Wallet,-,0,Positive,20151.29,0.58
+TXN170,CUST011,16-07-2023,EMI,16858.51,Travel,Net Banking,Home Loan,0,Neutral,17811.97,0.86
+TXN171,CUST002,18-07-2023,EMI,14800.63,Shopping,Wallet,Personal Loan,0,Positive,12782.17,0.67
+TXN172,CUST013,14-05-2023,Subscription,5042.74,Dining,Net Banking,-,90,Positive,0,0.88
+TXN173,CUST018,30-03-2023,Loan Payment,13344.69,Shopping,Cash,Credit Card EMI,0,Positive,30141.87,0.53
+TXN174,CUST009,20-03-2023,Bill Payment,5302.39,Shopping,Debit Card,-,0,Neutral,0,0.77
+TXN175,CUST016,23-07-2023,Purchase,1826.8,Technology,Cash,-,75,Negative,0,0.76
+TXN176,CUST009,24-05-2023,Investment,6389.09,Insurance,Net Banking,-,0,Negative,0,0.75
+TXN177,CUST020,11-12-2023,Loan Payment,19230.15,Real Estate,Wallet,-,0,Negative,26817.79,0.71
+TXN178,CUST013,16-10-2023,Loan Payment,11740.27,Real Estate,Credit Card,-,0,Neutral,41653.88,0.72
+TXN179,CUST013,04-09-2023,Subscription,1222.94,Entertainment,Cash,-,67,Negative,0,0.86
+TXN180,CUST018,21-01-2023,EMI,3945.41,Technology,Net Banking,-,0,Neutral,36680.47,0.93
+TXN181,CUST009,23-02-2023,Loan Payment,15502.44,Shopping,Credit Card,-,0,Neutral,36645.36,0.7
+TXN182,CUST007,08-01-2023,Bill Payment,14506.28,Technology,Wallet,-,0,Positive,0,0.85
+TXN183,CUST017,03-08-2023,Bill Payment,17186.21,Real Estate,Net Banking,-,0,Neutral,0,0.94
+TXN184,CUST007,26-08-2023,EMI,8457.39,Dining,Net Banking,Personal Loan,0,Negative,16955.01,0.51
+TXN185,CUST014,03-09-2023,Bill Payment,5587.31,Entertainment,Net Banking,-,0,Positive,0,0.81
+TXN186,CUST020,23-10-2023,Bill Payment,1077.95,Technology,Wallet,-,0,Positive,0,0.61
+TXN187,CUST012,12-02-2023,Loan Payment,8697.01,Healthcare,Cash,-,0,Positive,42633.18,0.67
+TXN188,CUST001,31-12-2023,Loan Payment,1172.77,Shopping,Cash,Credit Card EMI,0,Positive,23870.4,0.65
+TXN189,CUST006,09-04-2023,Loan Payment,4714.53,Insurance,Net Banking,Home Loan,0,Positive,34316.04,0.59
+TXN190,CUST018,04-06-2023,Purchase,11258.91,Travel,Cash,-,8,Negative,0,0.92
+TXN191,CUST018,02-02-2023,Subscription,18179.4,Technology,Wallet,-,53,Negative,0,0.64
+TXN192,CUST014,17-03-2023,EMI,1968.13,Dining,Cash,-,0,Negative,23904.88,0.52
+TXN193,CUST003,13-10-2023,Subscription,11665.63,Entertainment,Debit Card,-,77,Neutral,0,0.83
+TXN194,CUST004,23-08-2023,Loan Payment,14817.73,Real Estate,Credit Card,Personal Loan,0,Neutral,19289.7,0.56
+TXN195,CUST014,02-08-2023,Loan Payment,3344.22,Technology,Cash,-,0,Negative,21116.59,0.88
+TXN196,CUST018,31-12-2023,Purchase,1925.25,Technology,Credit Card,-,94,Neutral,0,0.91
+TXN197,CUST008,14-02-2023,Bill Payment,18332.82,Dining,Cash,-,0,Negative,0,0.84
+TXN198,CUST013,27-10-2023,Bill Payment,7682.63,Real Estate,Net Banking,-,0,Negative,0,0.87
+TXN199,CUST016,05-07-2023,Bill Payment,13508.02,Insurance,Credit Card,-,0,Positive,0,0.55
+TXN200,CUST019,04-10-2023,Subscription,5385.73,Insurance,Cash,-,45,Positive,0,0.66

@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Equity Funds",
+        "content": "Equity funds are designed for investors seeking long-term growth by investing in stocks...",
+        "website": "https://sites.wf.com/wfa-investing-options/",
+        "about": "Equity funds offer long-term growth potential, appealing to high-risk investors with tolerance for market volatility."
+    },
+    {
+        "id": 2,
+        "title": "Bond Funds",
+        "content": "Bond funds are ideal for low-risk investors seeking stable income through investments in bonds...",
+        "website": "https://www.wellsfargoadvisors.com/why-wells-fargo/products-services/investments/mutual-funds.htm",
+        "about": "Bond funds provide steady, low-risk returns through investments in government or corporate bonds."
+    },
+    {
+        "id": 3,
+        "title": "Balanced Funds",
+        "content": "Balanced funds provide a mix of stocks and bonds, offering both growth and income...",
+        "website": "https://sites.wf.com/wfa-investing-options/",
+        "about": "Balanced funds offer moderate risk and return by combining stocks and bonds in one portfolio."
+    },
+    {
+        "id": 5,
+        "title": "Exchange-Traded Funds (ETFs)",
+        "content": "ETFs offer low-cost, diversified investment strategies by tracking indexes like the S&P 500...",
+        "website": "https://www.wellsfargoadvisors.com/why-wells-fargo/products-services/etfs.htm",
+        "about": "ETFs provide low-cost diversification and flexibility, suitable for various risk tolerances."
+    },
+    {
+        "id": 6,
+        "title": "Annuities",
+        "content": "Annuities are contracts with insurance companies that offer a guaranteed income stream...",
+        "website": "https://www.wellsfargoadvisors.com/why-wells-fargo/products-services/investments/annuities.htm",
+        "about": "Annuities provide guaranteed long-term income, often used for retirement planning."
+    },
+    {
+        "id": 7,
+        "title": "Brokered Certificates of Deposit (CDs)",
+        "content": "Brokered CDs are ideal for low-risk investors seeking a stable return with minimal risk...",
+        "website": "https://www.wellsfargo.com/savings-cds/certificate-of-deposit/",
+        "about": "Brokered CDs offer stable, low-risk returns with FDIC insurance and fixed maturity periods."
+    },
+    {
+        "id": 8,
+        "title": "Stocks",
+        "content": "Stocks provide ownership in a company and are ideal for high-risk investors seeking long-term growth...",
+        "website": "https://www.wellsfargoadvisors.com/services/online.htm",
+        "about": "Stocks provide long-term growth opportunities, though they come with higher volatility and risk."
+    },
+    {
+        "id": 9,
+        "title": "Bonds",
+        "content": "Bonds are typically low-risk investments that provide regular income through interest payments...",
+        "website": "https://www.wellsfargoadvisors.com/why-wells-fargo/products-services/investments/bonds.htm",
+        "about": "Bonds offer consistent income with low volatility, ideal for conservative investors."
+    },
+    {
+        "id": 10,
+        "title": "Mutual Funds",
+        "content": "Mutual funds allow investors to pool their money and diversify across different asset classes...",
+        "website": "https://www.wellsfargoadvisors.com/research-center/mutual-funds.htm",
+        "about": "Mutual funds provide diversified investment options tailored to various risk preferences."
+    },
+    {
+        "id": 11,
+        "title": "Alternative Investments",
+        "content": "Alternative investments, such as hedge funds or private equity, are typically suited for high-risk investors...",
+        "website": "https://www.wellsfargoadvisors.com/research-analysis/reports/alternative-investing.htm",
+        "about": "Alternative investments offer high-return potential but come with greater risk and limited liquidity."
+    },
+    {
+        "id": 14,
+        "title": "Values-Aligned Investing",
+        "content": "Values-aligned investing is suitable for medium-risk investors who want to align their investments...",
+        "website": "https://www.wellsfargoadvisors.com/research-analysis/reports/values-aligned-investing.htm",
+        "about": "Values-aligned investing focuses on ethical, sustainable, and socially responsible investment options."
+    },
+    {
+        "id": 15,
+        "title": "Fixed Income Funds",
+        "content": "Fixed income funds provide regular income with a low level of risk...",
+        "website": "https://www.wellsfargo.com/cib/global-markets/fixed-income/",
+        "about": "Fixed income funds offer stable returns and lower risk, making them ideal for conservative investors."
+    }
+]

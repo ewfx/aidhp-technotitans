@@ -1,0 +1,65 @@
+<app-navbar></app-navbar> 
+<div class="dashboard-container">
+  <h1>Financial Dashboard</h1>
+
+  <!-- Loading State -->
+  <div *ngIf="isLoading" class="loading-container">
+    <p>Loading your financial data...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-container">
+    <p>{{ error }}</p>
+  </div>
+
+  <!-- Data Container -->
+  <ng-container *ngIf="!isLoading && !error && transactionData">
+    <div class="dashboard-summary">
+      <div class="summary-card">
+        <h3>Total Spent</h3>
+        <p>{{ transactionData.total_spent | currency }}</p>
+      </div>
+      <div class="summary-card">
+        <h3>Total Transactions</h3>
+        <p>{{ transactionData.total_transactions }}</p>
+      </div>
+    </div>
+
+    <div class="charts-container">
+      <div class="chart-card">
+        <h2>Spending by Category</h2>
+        <canvas 
+          *ngIf="categoryPieChartData.labels?.length"
+          baseChart
+          [data]="categoryPieChartData"
+          [options]="categoryPieChartOptions"
+          [type]="categoryPieChartType"
+        >
+        </canvas>
+        <p *ngIf="!categoryPieChartData.labels?.length" class="no-data">
+          No category spending data available
+        </p>
+      </div>
+
+      <div class="chart-card">
+        <h2>Loan Payments Over Time</h2>
+        <canvas 
+          *ngIf="loanPaymentsLineChartData.labels?.length"
+          baseChart
+          [data]="loanPaymentsLineChartData"
+          [options]="loanPaymentsLineChartOptions"
+          [type]="loanPaymentsLineChartType"
+        >
+        </canvas>
+        <p *ngIf="!loanPaymentsLineChartData.labels?.length" class="no-data">
+          No loan payment data available
+        </p>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- No Data State -->
+  <div *ngIf="!isLoading && !error && (!transactionData || transactionData.total_transactions === 0)" class="no-data-container">
+    <p>No transaction data found for this customer.</p>
+  </div>
+</div>
