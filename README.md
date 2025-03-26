@@ -52,6 +52,8 @@ We combined cutting-edge technologies to deliver a seamless, AI-driven recommend
    - Ensuring not to overwhelm users with too many recommendations or content, which could lead to decision fatigue
 
 ## 🏃 How to Run
+**Note: there needs to be a '.env' created with SERPAPI_API_KEY="your_api_key" which one can generate from https://serpapi.com/users/welcome**
+
 1. Clone the repository  
    ```sh
    git clone https://github.com/ewfx/aidhp-technotitans.git
